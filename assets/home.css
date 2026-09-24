@@ -1,0 +1,30 @@
+*{box-sizing:border-box;margin:0}
+body.hub{min-height:100vh;font:16px/1.6 'Segoe UI',system-ui,sans-serif;color:#fff;background:#0b0d1f;overflow-x:hidden}
+body.hub::before,body.hub::after{content:"";position:fixed;width:520px;height:520px;border-radius:50%;filter:blur(110px);z-index:-1;animation:f 14s ease-in-out infinite alternate}
+body.hub::before{background:#6c5ce7;top:-120px;left:-120px}
+body.hub::after{background:#00cec9;bottom:-140px;right:-120px;animation-delay:-7s}
+@keyframes f{to{transform:translate(90px,70px) scale(1.2)}}
+main{width:min(1100px,92%);margin:0 auto;padding:70px 0}
+.hero{text-align:center;margin-bottom:56px}
+.hero small{letter-spacing:6px;color:#00cec9;text-transform:uppercase}
+.hero h1{font-size:clamp(2.2rem,6vw,4.4rem);line-height:1.1;margin:14px 0;background:linear-gradient(90deg,#a29bfe,#00cec9,#fd79a8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{opacity:.7}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+.card{padding:34px;border-radius:24px;background:#ffffff0d;border:1px solid #ffffff22;backdrop-filter:blur(16px);transition:.35s}
+.card:hover{transform:translateY(-10px);border-color:var(--c);box-shadow:0 25px 60px #0009,0 0 40px var(--c)}
+.ic{font-size:44px;width:84px;height:84px;display:grid;place-items:center;border-radius:22px;background:var(--c);margin-bottom:22px}
+.card h2{margin-bottom:8px}
+.card p{opacity:.7;margin-bottom:26px}
+.go{display:inline-block;padding:12px 26px;border-radius:999px;color:#fff;text-decoration:none;font-weight:600;background:linear-gradient(135deg,#6c5ce7,#00cec9);transition:.3s}
+.go:hover{transform:scale(1.07)}
+footer{text-align:center;margin-top:60px;opacity:.5;font-size:14px}
+.list h2{margin:34px 0 12px;color:#00cec9}
+.list ol{display:grid;gap:10px;padding-left:34px}
+.list li a{display:block;padding:12px 18px;border-radius:14px;background:#ffffff0d;border:1px solid #ffffff1a;color:#fff;text-decoration:none;transition:.25s}
+.list li a:hover{background:#6c5ce733;transform:translateX(8px)}
+.top{margin-bottom:30px}
+
+.stats{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:34px}
+.stats span{padding:8px 18px;border-radius:999px;background:#ffffff12;border:1px solid #ffffff22;font-size:14px}
+.stats b{color:#00cec9}
+pre.code{background:#0008;padding:18px;border-radius:14px;overflow:auto;line-height:1.5;margin-top:16px;font-size:14px}
